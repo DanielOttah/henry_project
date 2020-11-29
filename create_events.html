@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="keywords" content="Henry, Nwachukwu" />
+    <meta name="description" content="website template" />
+    <title>VotingOffice.com | Create Event</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="companyBrand">
+                <ul id="brandName">
+                    <li class="dropdown">
+                        <a href="index.html" class="dropbtn largeFont">
+                VotingOffice<span class="smallFont">.com</span>
+              </a>
+                        <div class="dropdown-content">
+                            <a href="upcoming_events.html">Upcoming Event</a>
+                            <hr />
+                            <a href="current_events.html">Current Event</a>
+                            <hr />
+                            <a href="past_events.html">Past Events</a>
+                            <hr />
+                            <a href="our_sponsors.html">Our Sponsors</a>
+                            <hr />
+                            <a href="past_winners.html">Past Winners</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="photography.html">photography</a>
+                            <hr />
+                            <a href="music.html">Music</a>
+                            <hr />
+                            <a href="art.html">Art</a>
+                            <hr />
+                            <a href="#">Catergory D</a>
+                            <hr />
+                            <a href="#">Catergory E</a>
+                        </div>
+                    </li>
+                    <li><a class="" href="create_events.html">Create Event</a></li>
+
+                    <li><a class="" href="find_events.html">Find Event</a></li>
+
+                    <li><a class="" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <h1>Create Event</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <!--Photography-->
+            <div class="create_Event_Container">
+                <h2>Photography</h2>
+
+                <div class="create_Event_Card">
+                    <img src="/img/3.jpeg" alt="pix" style="width: 100%" />
+                    <div id="photographyEvent" class="w3-container w3-center">
+                        <p>Create Photography Event</p>
+                    </div>
+                </div>
+
+                <!-- Copy here -->
+                <div id="uploadPhotography" class="text_Left" style="display: none">
+                    <br />
+                    <div class="container">
+                        <div>
+                            <span>First Name:</span>
+                            <input class="bottom_space_10" id="ph_FName" type="text" />
+                        </div>
+                        <div>
+                            <span>Last Name:</span>
+                            <input class="bottom_space_10" id="ph_LName" type="text" />
+                        </div>
+                        <div>
+                            <span>Picture 1:</span>
+                            <input class="bottom_space_10" id="ph_Pix" type="file" multiple />
+                        </div>
+                        <button class="bottom_space_10" id="ph_Submit" type="button">
+                Submit
+              </button>
+                    </div>
+                </div>
+                <!-- End Copy here -->
+            </div>
+            <!-- Music -->
+            <div id="musicEvent" class="create_Event_Container">
+                <h2>Music</h2>
+
+                <div class="create_Event_Card">
+                    <img src="/img/4.jpeg" alt="pix" style="width: 100%" />
+                    <div class="w3-container w3-center">
+                        <p>Create Music Event</p>
+                    </div>
+                </div>
+                <div id="uploadMusic" class="text_Left" style="display: none">
+                    <br />
+                    <div class="container">
+                        <div>
+                            <span>First Name:</span>
+                            <input class="bottom_space_10" id="m_FName" type="text" />
+                        </div>
+                        <div>
+                            <span>Last Name:</span>
+                            <input class="bottom_space_10" id="m_LName" type="text" />
+                        </div>
+                        <div>
+                            <span>Picture 1:</span>
+                            <input class="bottom_space_10" id="m_Pix1" type="file" />
+                        </div>
+                        <div>
+                            <span>Picture 2:</span>
+                            <input class="bottom_space_10" id="m_Pix2" type="file" />
+                        </div>
+                        <button class="bottom_space_10" id="m_Submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Art -->
+            <div id="artEvent" class="create_Event_Container">
+                <h2>Art</h2>
+
+                <div class="create_Event_Card">
+                    <img src="/img/6.jpeg" alt="pix" style="width: 100%" />
+                    <div class="w3-container w3-center">
+                        <p>Create Art Event</p>
+                    </div>
+                </div>
+                <div id="uploadArt" class="text_Left" style="display: none">
+                    <br />
+                    <div class="container">
+                        <div>
+                            <span>First Name:</span>
+                            <input class="bottom_space_10" id="a_FName" type="text" />
+                        </div>
+                        <div>
+                            <span>Last Name:</span>
+                            <input class="bottom_space_10" id="a_LName" type="text" />
+                        </div>
+                        <div>
+                            <span>Picture 1:</span>
+                            <input class="bottom_space_10" id="a_Pix1" type="file" />
+                        </div>
+                        <div>
+                            <span>Picture 2:</span>
+                            <input class="bottom_space_10" id="a_Pix2" type="file" />
+                        </div>
+                        <button class="bottom_space_10" id="a_Submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div id="artEvennt" class="create_Event_Container">
+                <h2>Art</h2>
+
+                <div class="create_Event_Card">
+                    <img src="/img/6.jpeg" alt="pix" style="width: 100%" />
+                    <div class="w3-container w3-center">
+                        <p>Create Art Event</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="top_bottom_padding"></div>
+    </div>
+    <footer>
+        <p>
+            VotingOffice<span class="smallFont">.com</span> | Copyright &copy;2020
+        </p>
+    </footer>
+    <script src="/js/create_event.js"></script>
+</body>
+
+</html>
