@@ -64,6 +64,7 @@ const createAccordion = (arr_pix) => { // this method creates the accordion
     const divPanel = document.createElement("DIV"); //create a new div
     divPanel.setAttribute("class", "panel"); //assign a class panel to it;  
     divPanel.style.display = "none";
+    divPanel.style.marginBottom = "30px";
 
     for (let i = 0; i < arr_pix.length; i++) {
         const img1 = document.createElement("IMG"); //create a new image tag

@@ -60,17 +60,40 @@ musicEvent.addEventListener('click', () => {
 
 
 
-//============================ Art Section ======================================
-const artEvent = document.getElementById("artEvent");
-const uploadArt = document.getElementById("uploadArt");
+//============================ Video Section ======================================
+const videoEvent = document.getElementById("videoEvent");
+const uploadVideo = document.getElementById("uploadVideo");
+const vid_FName = document.getElementById("vid_FName");
+const vid_LName = document.getElementById("vid_LName");
+const vid_Submit = document.getElementById("vid_Submit");
+const vids = document.getElementById("uploadVideo").querySelector('input[type="file"][multiple]');
 
-const openArtUpload = () => {
-    if (uploadArt.style.display === "none") {
-        uploadArt.style.display = "block";
+const OpenVideoUpload = () => {
+    if (uploadVideo.style.display === "none") {
+        uploadVideo.style.display = "block";
     }
     else {
-        uploadArt.style.display = "none";
+        uploadVideo.style.display = "none";
     }
 }
 
-artEvent.addEventListener('click', openArtUpload);
+videoEvent.addEventListener('click', OpenVideoUpload);
+
+//==================== Upload Video info to database through API ==================
+vid_Submit.addEventListener('click', async () => {
+    // console.log(vids.files[0]);
+    let link = "http://localhost:3500/uploadVideo";
+    const videoData = new FormData();
+    videoData.append('first_Name', vid_FName.value);
+    videoData.append('last_Name', vid_LName.value);
+    videoData.append('votes', 0);
+    for (let i = 0; i < vids.files.length; i++) {
+        videoData.append('Videos', vids.files[i]);
+    }
+    let resp = await fetch(link, {
+        method: "POST",
+        body: videoData
+    })
+    let response = await resp.json();
+    console.log(response);
+});

@@ -1,0 +1,2 @@
+### Call all Photographers
+GET http://localhost:3500/all_photographers
